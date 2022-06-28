@@ -1,0 +1,40 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "myblob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "sftp-report/{name}",
+      "connection": "blob_connection"
+    },
+    {
+      "type": "blob",
+      "name": "outputBlob1",
+      "path": "sftp-encrypted-report/DTE/{name}.pgp",
+      "direction": "out",
+      "connection": "blob_connection"
+    },
+    {
+      "type": "blob",
+      "name": "outputBlob2",
+      "path": "sftp-encrypted-report/XCEL/{name}.pgp",
+      "direction": "out",
+      "connection": "blob_connection"
+    },
+    {
+      "type": "blob",
+      "name": "outputBlob3",
+      "path": "sftp-encrypted-report/SMUD/{name}.pgp",
+      "direction": "out",
+      "connection": "blob_connection"
+    },
+    {
+      "type": "blob",
+      "name": "outputBlob4",
+      "path": "sftp-encrypted-report/NationalGrid/{name}.pgp",
+      "direction": "out",
+      "connection": "blob_connection"
+    }
+  ]
+}
