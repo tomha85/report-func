@@ -65,6 +65,6 @@ jobs:
           app-name: 'dev-report-energy'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3EFF012B34494E9EB4441F02B60C98A9 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7E0A57DE3AA0415E862470A747F14C49 }}
           scm-do-build-during-deployment: true
           enable-oryx-build: true
